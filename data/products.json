@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop HP",
+    "description": "Laptop gamer",
+    "code": "HP001",
+    "price": 6000,
+    "status": true,
+    "stock": 2,
+    "category": "Tecnologia",
+    "thumbnails": []
+  },
+  {
+    "id": 2,
+    "title": "Monitor Gamer 27\" 144Hz",
+    "description": "Monitor Full HD de 27 pulgadas con tasa de refresco de 144Hz y tecnología FreeSync.",
+    "code": "MN-144HZ-27",
+    "price": 249.99,
+    "status": true,
+    "stock": 10,
+    "category": "monitores",
+    "thumbnails": [
+      "/images/products/monitor1.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Mouse Inalámbrico Ergonómico",
+    "description": "Mouse inalámbrico con diseño ergonómico, 6 botones programables y batería recargable.",
+    "code": "MS-ERG-002",
+    "price": 39.5,
+    "status": true,
+    "stock": 40,
+    "category": "perifericos",
+    "thumbnails": [
+      "/images/products/mouse1.jpg",
+      "/images/products/mouse2.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Disco SSD 1TB NVMe",
+    "description": "Unidad de estado sólido NVMe de 1TB con alta velocidad de lectura y escritura.",
+    "code": "SSD-NVME-1TB",
+    "price": 129.99,
+    "status": true,
+    "stock": 15,
+    "category": "almacenamiento",
+    "thumbnails": [
+      "/images/products/ssd1.jpg"
+    ]
+  }
+]
