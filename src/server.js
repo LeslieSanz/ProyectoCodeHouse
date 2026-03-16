@@ -38,6 +38,7 @@ const serverHttp = app.listen(PORT, () => {
 
 const io = new Server(serverHttp);
 
+//Confirmacion de conexion
 io.on("connection", (socket) => {
 
     console.log("Cliente conectado");
@@ -47,13 +48,19 @@ io.on("connection", (socket) => {
 });
 
 
-
 //Lógica para agregar productos usando el productManager
 io.on("connection", (socket) => {
     socket.emit("products", productManager.getProducts());
+
     socket.on("newProduct", (product) => {
         productManager.addProduct(product);
         io.emit("products", productManager.getProducts());
+    });
+
+    socket.on("deleteProduct", (id) => {
+        productManager.deleteProduct(id);
+        const products = productManager.getProducts();
+        io.emit("products", products);
     });
 
 });

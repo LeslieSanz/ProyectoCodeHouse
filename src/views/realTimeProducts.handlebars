@@ -2,31 +2,46 @@
 
 <form id="form">
 
-<label>Título</label>
-<input type="text" id="title" required>
+    <label>Título</label>
+    <input type="text" id="title" required>
 
-<label>Descripción</label>
-<input type="text" id="description" required>
+    <label>Descripción</label>
+    <input type="text" id="description" required>
 
-<label>Código</label>
-<input type="text" id="code" required>
+    <label>Código</label>
+    <input type="text" id="code" required>
 
-<label>Precio</label>
-<input type="number" id="price" required>
+    <label>Precio</label>
+    <input type="number" id="price" required>
 
-<label>Stock</label>
-<input type="number" id="stock" required>
+    <label>Stock</label>
+    <input type="number" id="stock" required>
 
-<label>Categoría</label>
-<input type="text" id="category" required>
+    <label>Categoría</label>
+    <input type="text" id="category" required>
 
-<button type="submit">Agregar producto</button>
+    <button type="submit">Agregar producto</button>
 
 </form>
 
 <hr>
 
-<div id="products"></div>
+<table border="1">
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Título</th>
+<th>Precio</th>
+<th>Stock</th>
+<th>Categoría</th>
+<th>Acción</th>
+</tr>
+</thead>
+
+<tbody id="products"></tbody>
+
+</table>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/realtime.js"></script>

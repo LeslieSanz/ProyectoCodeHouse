@@ -24,27 +24,14 @@
     ]
   },
   {
-    "id": 4,
-    "title": "Disco SSD 1TB NVMe",
-    "description": "Unidad de estado sólido NVMe de 1TB con alta velocidad de lectura y escritura.",
-    "code": "SSD-NVME-1TB",
-    "price": 129.99,
+    "id": 3,
+    "title": "Teclado Mecánico",
+    "description": "Teclado mecánico con switches red y retroiluminación LED",
+    "code": "KEY-MEC-02",
+    "price": "120",
     "status": true,
-    "stock": 15,
-    "category": "almacenamiento",
-    "thumbnails": [
-      "/images/products/ssd1.jpg"
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Mouse Gamer",
-    "description": "Gamer Alta Gama",
-    "code": "LAGQVXVD",
-    "price": "56",
-    "status": true,
-    "stock": "20",
-    "category": "Mouse",
+    "stock": "15",
+    "category": "Periféricos",
     "thumbnails": []
   }
 ]
