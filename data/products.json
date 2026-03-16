@@ -24,20 +24,6 @@
     ]
   },
   {
-    "id": 3,
-    "title": "Mouse Inalámbrico Ergonómico",
-    "description": "Mouse inalámbrico con diseño ergonómico, 6 botones programables y batería recargable.",
-    "code": "MS-ERG-002",
-    "price": 39.5,
-    "status": true,
-    "stock": 40,
-    "category": "perifericos",
-    "thumbnails": [
-      "/images/products/mouse1.jpg",
-      "/images/products/mouse2.jpg"
-    ]
-  },
-  {
     "id": 4,
     "title": "Disco SSD 1TB NVMe",
     "description": "Unidad de estado sólido NVMe de 1TB con alta velocidad de lectura y escritura.",
