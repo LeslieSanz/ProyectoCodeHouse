@@ -35,5 +35,16 @@
     "thumbnails": [
       "/images/products/ssd1.jpg"
     ]
+  },
+  {
+    "id": 5,
+    "title": "Mouse Gamer",
+    "description": "Gamer Alta Gama",
+    "code": "LAGQVXVD",
+    "price": "56",
+    "status": true,
+    "stock": "20",
+    "category": "Mouse",
+    "thumbnails": []
   }
 ]
