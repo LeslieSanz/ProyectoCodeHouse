@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from "express";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";
@@ -5,6 +7,9 @@ import productRouter from "./routes/product-router.js";
 import cartRouter from "./routes/cart-router.js";
 import viewsRouter from "./routes/views-router.js";
 import ProductManager from "./managers/product-manager.js";
+//Conexión con MongoDB
+import { connectDB } from './config/db.js';
+
 
 const app = express();
 const PORT = 8080;
@@ -32,9 +37,14 @@ app.listen(PORT, () => {
 });
 */
 
+//Conexión 
+connectDB();
+
 const serverHttp = app.listen(PORT, () => {
     console.log(`Servidor OK escuchando en puerto ${PORT}`);
 });
+
+console.log('URI:', process.env.MONGO_URI);
 
 const io = new Server(serverHttp);
 
